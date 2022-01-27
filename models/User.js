@@ -1,76 +1,70 @@
-import mongoose from 'mongoose';
-import {role, gender, language} from '../constants.js'
+import mongoose from "mongoose";
+import { role, gender, language } from "../constants.js";
+
 const schema = mongoose.Schema;
 
-const userSchema = new schema({
-    
-    firstname:{
-        type:String,
-        require:true,
+const userSchema = new schema(
+  {
+    firstname: {
+      type: String,
+      require: true,
     },
-    lastname:{
-        type:String,
-        require:true,
+    lastname: {
+      type: String,
+      require: true,
     },
     email: {
-        type: String,
-        require: true,
-        unique: true
+      type: String,
+      require: true,
+      unique: true,
     },
-    password:{
-        type: String,
-        require: true
+    password: {
+      type: String,
+      require: true,
     },
     role: {
-        type: String,
-        enum: role,
-        default: 'STUDENT',
-      },
-    gender:{
-        type: String,
-        enum: gender,
-        default: 'STUDENT',
-      },
-    birthday: { 
-        type: Date,
-        
+      type: String,
+      enum: role,
+      default: "STUDENT",
+      required: true,
     },
-    phone: { 
-        type: Number,
-        
+    gender: {
+      type: String,
+      enum: gender,
     },
-    region:{ 
-        type: String,
-       
+    birthday: {
+      type: Date,
     },
-    language:{ 
-        type: String,
-        enum:language,
-        
+    phone: {
+      type: Number,
     },
-    civility:{ 
-        type: String,
-        
+    region: {
+      type: String,
     },
-    profession:{ 
-        type: String,
-        
+    language: {
+      type: String,
+      enum: language,
     },
-    situation: { 
-        type: String,
-        
+    civility: {
+      type: String,
     },
-    isDeleted:{
-        type:Boolean,
-        default:false
+    profession: {
+      type: String,
     },
+    situation: {
+      type: String,
+    },
+    isDeleted: {
+      type: Boolean,
+      default: false,
+    },
+    accessToken:String,
 
     deletedAt: Date,
-    facebookUrl:String,
-    linkedInUrl:String,
-
-}, {timestamps: true}) 
-
-
+    facebookUrl: String,
+    linkedInUrl: String,
+  },
+  { timestamps: true }
+);
 
 export default mongoose.model("user", userSchema);

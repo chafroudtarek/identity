@@ -1,13 +1,20 @@
-import { Router } from 'express';
-import { getLoggenInUser, login, register } from '../controllers/account.js';
-import auth from '../middlewares/auth.js';
+import { Router } from "express";
+import {
+  getLoggenInUser,
+  login,
+  register,
+  sendresetemail,
+  resetpassword,
+} from "../controllers/account.js";
 
 const router = Router();
 
-router.post('/login', login);
+router.post("/login", login);
 
-router.post('/register', register);
+router.post("/register", register);
 
-router.get('/', auth, getLoggenInUser);
+router.get("/", getLoggenInUser);
 
+router.post("/resetpass", sendresetemail);
+router.post("/resetpass/:userId/:token", resetpassword);
 export default router;
