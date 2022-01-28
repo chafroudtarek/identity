@@ -8,10 +8,7 @@ export const postUser = async (req, res) => {
       !req.body.email ||
       !req.body.firstname ||
       !req.body.lastname ||
-      !req.body.password ||
-      !req.body.role ||
-      !req.body.birthday ||
-      !req.body.phone
+      !req.body.password
     ) {
       mylogger.error(
         `res.status = "400"  - MISSING_FIELD - ${req.originalUrl} - ${req.method} - ${req.ip}`
@@ -91,7 +88,7 @@ export const getOneUser = async (req, res) => {
 export const deleteOneUser = async (req, res) => {
   try {
     const user = await User.findOne({ _id: req.params.id });
-    user.isDeleted = true;
+    user.enabled = false;
     await user.save();
     res.send({ message: req.t("SUCCESS.DELETED") });
     mylogger.error(
@@ -109,7 +106,17 @@ export const deleteOneUser = async (req, res) => {
 export const updateUser = async (req, res) => {
   if (req.user.role !== "ADMIN") {
     const { id } = res.locals.loggedInUser;
-    User.findByIdAndUpdate(id, req.body, { new: true })
+    User.findOneAndUpdate(
+      id,
+      {
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
+        profession: req.body.profession,
+        civility: req.body.civility,
+        language: req.body.language,
+      },
+      { new: true }
+    )
       .then((user) => res.json(user))
       .catch((err) => res.status(404).json(err));
   } else {

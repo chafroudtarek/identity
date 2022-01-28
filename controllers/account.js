@@ -9,10 +9,10 @@ import { sendEmail } from "../utils/sendEmail.js";
 import { mylogger } from "../utils/winstonn.js";
 
 export const getLoggenInUser = async (req, res, next) => {
-  const { id } = res.locals.loggedInUser;
+  const { _id } = res.locals.loggedInUser;
 
   try {
-    const user = await User.findOne({ _id: id });
+    const user = await User.findOne({ _id: _id });
     if (!user) {
       mylogger.error(
         `res.status = "400"  - UNAUTHORIZED - ${req.originalUrl} - ${req.method} - ${req.ip}`
@@ -36,8 +36,7 @@ export const getLoggenInUser = async (req, res, next) => {
 };
 
 export const register = async (req, res, next) => {
-  let { firstname, lastname, email, password, role, birthday, phone } =
-    req.body;
+  let { firstname, lastname, email, password, role } = req.body;
   if (!firstname || !lastname || !password || !email || !role) {
     mylogger.error(
       `res.status = "400"  - INVALID_INFORMATION - ${req.originalUrl} - ${req.method} - ${req.ip}`
@@ -89,7 +88,7 @@ export const register = async (req, res, next) => {
       await _user.save();
       return res.status(201).json({
         message: req.t("SUCCESS.ADDED"),
-        user: _user,
+        accessToken: accessToken,
         success: true,
       });
     });
@@ -133,8 +132,9 @@ export const login = async (req, res, next) => {
     });
     await User.findByIdAndUpdate(user._id, { accessToken });
     res.status(200).json({
-      data: { email: user.email, role: user.role },
-      accessToken,
+      message: req.t("SUCCESS.LOGGED"),
+      accessToken: accessToken,
+      success: true,
     });
   } catch (error) {
     mylogger.error(
@@ -161,7 +161,9 @@ export const sendresetemail = async (req, res) => {
 
     const user = await User.findOne({ email: req.body.email });
     if (!user)
-      return res.status(400).send("user with given email doesn't exist");
+      return res
+        .status(400)
+        .send({ message: req.t("ERROR.NOTFOUND_USERBYEMAIL") });
 
     let token = await Token.findOne({ userId: user._id });
     if (!token) {
@@ -170,8 +172,8 @@ export const sendresetemail = async (req, res) => {
         token: crypto.randomBytes(32).toString("hex"),
       }).save();
     }
-    const link = `${process.env.BASE_URL}/resetpass/${user._id}/${token.token}`;
-    await sendEmail(user.email, "Password reset", link);
+    const link = `${process.env.HOST}/resetpass/${user._id}/${token.token}`;
+    await sendEmail(user.email, link);
 
     res.send("password reset link sent to your email account");
   } catch (error) {
@@ -200,12 +202,60 @@ export const resetpassword = async (req, res) => {
     if (!token) return res.status(400).send("Invalid link or expired");
 
     user.password = req.body.password;
-    await user.save();
+    user.markModified("password");
+    user.save();
     await token.delete();
 
-    res.send("password reset sucessfully.");
+    res.send({ message: req.t("SUCCESS.RESET_PASSWORD") });
   } catch (error) {
-    res.send("An error occured");
-    console.log(error);
+    res.send({ message: error });
+    mylogger.error(
+      `res.status = "400"  - ERROR RESET PASSWORD -${req.params.userId}- ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+
+//Change user password
+export const changepass = async (req, res) => {
+  let { oldpassword, newpassword } = req.body;
+  const { email } = res.locals.loggedInUser;
+  try {
+    const user = await User.findOne({ email: email });
+    if (!user)
+      return res
+        .status(400)
+        .send({ message: req.t("ERROR.NOTFOUND_USERBYEMAIL") });
+
+    const isMatch = await bcryptjs.compare(oldpassword, user.password);
+    if (!isMatch) {
+      mylogger.error(
+        `res.status = "400"  - WRONG_OLD_PASSWORD - ${req.originalUrl} - ${req.method} - ${req.ip}`
+      );
+      return res.status(400).json({
+        message: req.t("ERROR.AUTH.WRONG_OLD_PASSWORD"),
+        success: false,
+      });
+    }
+    bcryptjs.hash(newpassword, 10, async (hashError, hash) => {
+      if (hashError) {
+        mylogger.error(
+          `res.status = "500"  - ${hashError.message} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+        );
+        return res.status(500).json({
+          message: hashError.message,
+          error: hashError,
+        });
+      }
+
+      user.password = hash;
+      user.markModified("password");
+      user.save();
+      res.send({ message: req.t("SUCCESS.CHANGE_PASSWORD"), success: true });
+    });
+  } catch (error) {
+    res.send({ message: error });
+    mylogger.error(
+      `res.status = "400"  - ERROR RESET PASSWORD -${req.params.userId}- ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
   }
 };

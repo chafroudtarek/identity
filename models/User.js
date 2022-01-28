@@ -26,7 +26,6 @@ const userSchema = new schema(
       type: String,
       enum: role,
       default: "STUDENT",
-      required: true,
     },
     gender: {
       type: String,
@@ -54,11 +53,11 @@ const userSchema = new schema(
     situation: {
       type: String,
     },
-    isDeleted: {
+    enabled: {
       type: Boolean,
-      default: false,
+      default: true,
     },
-    accessToken:String,
+    accessToken: String,
 
     deletedAt: Date,
     facebookUrl: String,

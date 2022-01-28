@@ -25,6 +25,7 @@ export const allowLoggedin = async (req, res, next) => {
     if (!user)
       return res.status(401).json({
         error: "You need to be logged in to access this route",
+      
       });
     req.user = user;
     next();
