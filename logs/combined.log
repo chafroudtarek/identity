@@ -2724,3 +2724,1226 @@
 {"level":"info","message":" DATABASE(MONGODB) is Connected"}
 {"level":"info","message":"Server started and running on http://localhost:2022:2022"}
 {"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"error","message":"res.status = \"200\"  - SUCCESS.FOUND_USER - user id:undefined - GET - ::1- /api/users/"}
+{"level":"error","message":"res.status = \"200\"  - SUCCESS.FOUND_USER - user id:undefined - GET - ::1- /api/users/"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"error","message":"res.status = \"400\"  - INVALID_CREDNTIALS - /api/auth/login/ - POST - ::1"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"error","message":"res.status = \"400\"  - WRONG_OLD_PASSWORD - /api/auth/changepassword/ - POST - ::1"}
+{"level":"error","message":"res.status = \"400\"  - INVALID_CREDNTIALS - /api/auth/login/ - POST - ::1"}
+{"level":"error","message":"res.status = \"400\"  - WRONG_OLD_PASSWORD - /api/auth/changepassword/ - POST - ::1"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"error","message":"res.status = \"500\"  - Illegal arguments: undefined, number - /api/auth/resetpassword/61f5202e5019ffae5093d439 - POST - ::1"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}

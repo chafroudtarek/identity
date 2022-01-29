@@ -3,11 +3,14 @@ import {
   getLoggenInUser,
   login,
   register,
-  sendresetemail,
-  resetpassword,
   changepass,
 } from "../controllers/account.js";
 import { allowLoggedin } from "../middlewares/auth.js";
+import {
+  forgetpassword,
+  forgetpasswordverify,
+  resetpasswordv1,
+} from "../controllers/resetpassword.js";
 
 const router = Router();
 
@@ -40,9 +43,21 @@ router.post("/changepassword", allowLoggedin, changepass);
 router.get("/", getLoggenInUser);
 
 //@POST method
+// @desc forget password
+//@path : http://localhost::2022/api/auth/
+//Params body
+router.post("/forgetpassword/", forgetpassword);
+
+//@POST method
+// @desc verfication du code
+//@path : http://localhost::2022/api/auth/
+//Params body
+
+router.post("/forgetpass-verify/:id", forgetpasswordverify);
+
+//@POST method
 // @desc reset password
 //@path : http://localhost::2022/api/auth/
 //Params body
-router.post("/resetpass", sendresetemail);
-router.post("/resetpass/:userId/:token", resetpassword);
+router.post("/resetpassword/:id", resetpasswordv1);
 export default router;

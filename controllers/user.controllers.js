@@ -62,7 +62,7 @@ export const getOneUser = async (req, res) => {
     if (req.user.role !== "ADMIN") {
       const result = await User.findOne({ _id: req.params.id }).select({
         firstname: 1,
-        lastname: 1,
+        lastname: 1,                                            
         email: 1,
       });
       res.send({

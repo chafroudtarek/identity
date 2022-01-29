@@ -13,8 +13,8 @@ i18next
     .use(middleware.LanguageDetector)
     .use(Backend)
     .init({
+        
         locales: ['fr','en','ar'],
-       
         fallbackLng: 'en',
         
         backend: {
@@ -23,3 +23,21 @@ i18next
     });
 
 export default i18next;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

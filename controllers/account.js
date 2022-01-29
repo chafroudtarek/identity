@@ -3,9 +3,9 @@ import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 import Token from "../models/token.js";
-import crypto from "crypto";
 
-import { sendEmail } from "../utils/sendEmail.js";
+
+
 import { mylogger } from "../utils/winstonn.js";
 
 export const getLoggenInUser = async (req, res, next) => {
@@ -144,74 +144,6 @@ export const login = async (req, res, next) => {
       message: error.message,
       error: error,
     });
-  }
-};
-
-// Reset Password
-
-export const sendresetemail = async (req, res) => {
-  try {
-    if (!req.body.email) {
-      mylogger.error(
-        `res.status = "400"  - MISSING_FIELD - ${req.originalUrl} - ${req.method} - ${req.ip}`
-      );
-      res.status(400).send({ message: req.t("ERROR.AUTH.MISSING_FIELD") });
-      return;
-    }
-
-    const user = await User.findOne({ email: req.body.email });
-    if (!user)
-      return res
-        .status(400)
-        .send({ message: req.t("ERROR.NOTFOUND_USERBYEMAIL") });
-
-    let token = await Token.findOne({ userId: user._id });
-    if (!token) {
-      token = await new Token({
-        userId: user._id,
-        token: crypto.randomBytes(32).toString("hex"),
-      }).save();
-    }
-    const link = `${process.env.HOST}/resetpass/${user._id}/${token.token}`;
-    await sendEmail(user.email, link);
-
-    res.send("password reset link sent to your email account");
-  } catch (error) {
-    res.send("An error occured");
-    console.log(error);
-  }
-};
-
-export const resetpassword = async (req, res) => {
-  try {
-    if (!req.body.password) {
-      mylogger.error(
-        `res.status = "400"  - MISSING_FIELD - ${req.originalUrl} - ${req.method} - ${req.ip}`
-      );
-      res.status(400).send({ message: req.t("ERROR.AUTH.MISSING_FIELD") });
-      return;
-    }
-
-    const user = await User.findById(req.params.userId);
-    if (!user) return res.status(400).send("invalid link or expired");
-
-    const token = await Token.findOne({
-      userId: user._id,
-      token: req.params.token,
-    });
-    if (!token) return res.status(400).send("Invalid link or expired");
-
-    user.password = req.body.password;
-    user.markModified("password");
-    user.save();
-    await token.delete();
-
-    res.send({ message: req.t("SUCCESS.RESET_PASSWORD") });
-  } catch (error) {
-    res.send({ message: error });
-    mylogger.error(
-      `res.status = "400"  - ERROR RESET PASSWORD -${req.params.userId}- ${req.originalUrl} - ${req.method} - ${req.ip}`
-    );
   }
 };
 
