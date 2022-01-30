@@ -46,7 +46,6 @@ export const forgetpassword = async (req, res) => {
 export const forgetpasswordverify = async (req, res) => {
   try {
     const forgetpassword = await Verification.findOne({ _id: req.params.id });
-    await Verification.deleteMany({ used: true, userId: req.params.id });
 
     if (
       req.body.verificationCode == forgetpassword.verificationCode &&
