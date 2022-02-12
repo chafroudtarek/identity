@@ -191,3 +191,14 @@ export const changepass = async (req, res) => {
     );
   }
 };
+
+
+// recently added
+export const logout = async (req, res) => {
+  const { id } = res.locals.loggedInUser;
+  User.findOneAndUpdate( id,
+      { accessToken: '' },
+      { new: true })
+      .then((user) => res.json(user))
+      .catch((err) => res.status(404).json(err));
+}

@@ -4,6 +4,7 @@ import {
   login,
   register,
   changepass,
+  logout
 } from "../controllers/account.js";
 import { allowLoggedin } from "../middlewares/auth.js";
 import {
@@ -60,4 +61,8 @@ router.post("/forgetpass-verify/:id", forgetpasswordverify);
 //@path : http://localhost::2022/api/auth/
 //Params body
 router.post("/resetpassword/:id", resetpasswordv1);
+
+
+router.post('/logout',logout);
+
 export default router;
