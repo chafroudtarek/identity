@@ -4019,3 +4019,6 @@
 {"level":"info","message":" DATABASE(MONGODB) is Connected"}
 {"level":"info","message":"Server started and running on http://localhost:2022:2022"}
 {"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"info","message":"Server started and running on http://localhost:2022:2022"}
+{"level":"info","message":" DATABASE(MONGODB) is Connected"}
+{"level":"error","message":"res.status = \"401\"  - USER_EXISTS -undefined /api/auth/register - POST - ::1"}
