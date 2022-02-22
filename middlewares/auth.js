@@ -1,37 +1,56 @@
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
+import dotenv from "dotenv";
 
-const auth = async (req, res, next) => {
-  if (req.headers["x-access-token"]) {
-    const accessToken = req.headers["x-access-token"];
-    const { userId, exp } = jwt.verify(accessToken, process.env.JWT_SECRET);
-    // Check if token has expired
-    if (exp < Date.now().valueOf() / 1000) {
-      return res.status(401).json({
-        error: "JWT token has expired, please login to obtain a new one",
-      });
-    }
-    res.locals.loggedInUser = await User.findById(userId);
-    next();
-  } else {
-    next();
-  }
-};
 
-//Logged user
-export const allowLoggedin = async (req, res, next) => {
-  try {
-    const user = res.locals.loggedInUser;
-    if (!user)
-      return res.status(401).json({
-        error: req.t("ERROR.LOGGED"),
-        succes: false,
-      });
-    req.user = user;
-    next();
-  } catch (error) {
-    next(error);
-  }
-};
+dotenv.config();
 
-export default auth;
+
+
+
+
+ const permit =  (...permittedRoles) => {
+   
+    return (req, res, next) => {
+        try {
+            console.log("*** MIDDLEWARE verifyToken ***");
+            if (!req.headers.authorization) return res.sendStatus(401)
+            const accessToken = req.headers.authorization.split(' ')[1];
+            if (accessToken == null || !accessToken) return res.sendStatus(401)
+            jwt.verify(accessToken, process.env.JWT_SECRET,  (err, user) => {
+                console.log(user);
+                if (err) return res.status(401).json(err);
+                console.log("permittedRoles : ", permittedRoles);
+               
+                User
+                    .findById(user._id).select('accessToken')
+                    .then((userDoc) => {
+                        if (!userDoc || userDoc.accessToken != accessToken)
+                            return res.status(401).json({ message: "Veuillez vous reconnecter." })
+                        if (permittedRoles && permittedRoles.length) {
+                            if (user && permittedRoles.includes(user.type)) {
+                                // console.log("user :", user);
+                                req.user = user;
+                                next();
+                            } else {
+                                res.status(403).json({ message: "Forbidden" }); // user is forbidden
+                            }
+                        } else {
+                            // console.log("user :", user);
+                            req.user = user;
+                            next();
+                        }
+                    })
+                    .catch((err) => res.status(404).json(err));
+
+            })
+        } catch {
+            res.status(400).json({
+                error: new Error('Invalid request!')
+            });
+        }
+    };
+}
+
+
+export default permit;

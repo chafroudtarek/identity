@@ -6,8 +6,11 @@ import {
   getOneUser,
   getUser,
 } from "../controllers/user.controllers.js";
-import { authRole } from "../middlewares/accessrole.js";
-import { allowLoggedin } from "../middlewares/auth.js";
+import {role}  from"../constants.js";
+import permit from "../middlewares/auth.js";
+
+
+
 
 const router = Router();
 
@@ -16,14 +19,14 @@ const router = Router();
 //@path : http://localhost::2022/api/users/
 //Params body
 
-router.post("/", allowLoggedin, postUser);
+router.post("/",permit(role.ADMIN), postUser);
 
 //@Get method
 // @desc Get all user
 //@path : http://localhost::2022/api/users
 //Params body
 
-router.get("/", allowLoggedin, authRole(["ADMIN"]), getUser);
+router.get("/", permit(role.ADMIN), getUser);
 
 //@Get method
 // @desc Get one user
@@ -32,8 +35,8 @@ router.get("/", allowLoggedin, authRole(["ADMIN"]), getUser);
 
 router.get(
   "/:id",
-  allowLoggedin,
-  authRole(["ADMIN", "STUDENT", "EMPLOYER"]),
+  
+  permit(role.ADMIN),
   getOneUser
 );
 
@@ -41,7 +44,7 @@ router.get(
 // @desc delete one user by id
 //@path : http://localhost:2022/api/users:id
 //Params id
-router.delete("/:id", allowLoggedin, authRole(["ADMIN"]), deleteOneUser);
+router.delete("/:id", permit(role.ADMIN), deleteOneUser);
 
 //@put method
 // @desc update one User by id
@@ -50,8 +53,9 @@ router.delete("/:id", allowLoggedin, authRole(["ADMIN"]), deleteOneUser);
 
 router.put(
   "/:id",
-  allowLoggedin,
-  authRole(["ADMIN", "STUDENT", "EMPLOYER"]),
+  
+ 
+  permit(role.ADMIN,role.INSTRUCTOR, role.STUDENT),
   updateUser
 );
 

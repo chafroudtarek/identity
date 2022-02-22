@@ -6,12 +6,16 @@ import {
   changepass,
   logout
 } from "../controllers/account.js";
-import { allowLoggedin } from "../middlewares/auth.js";
+
 import {
   forgetpassword,
   forgetpasswordverify,
   resetpasswordv1,
 } from "../controllers/resetpassword.js";
+import permit from "../middlewares/auth.js";
+import {role}  from"../constants.js";
+
+
 
 const router = Router();
 
@@ -20,7 +24,7 @@ const router = Router();
 //@path : http://localhost::2022/api/auth/
 //Params body
 
-router.post("/login", login);
+router.post("/login/:email",login);
 
 //@POST method
 // @desc register a user
@@ -34,7 +38,7 @@ router.post("/register", register);
 //@path : http://localhost::2022/api/auth/
 //Params body
 
-router.post("/changepassword", allowLoggedin, changepass);
+router.post("/changepassword",  permit(role.ADMIN,role.INSTRUCTOR, role.STUDENT), changepass);
 
 //@POST method
 // @desc post get loggen in user
@@ -63,6 +67,6 @@ router.post("/forgetpass-verify/:id", forgetpasswordverify);
 router.post("/resetpassword/:id", resetpasswordv1);
 
 
-router.post('/logout',logout);
+router.post('/logout',permit(role.STUDENT,role.INSTRUCTOR,role.ADMIN),logout);
 
 export default router;

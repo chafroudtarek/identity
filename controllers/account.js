@@ -2,11 +2,11 @@ import mongoose from "mongoose";
 import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
-import Token from "../models/token.js";
-
+import { run } from "../utils/kafka.js";
 
 
 import { mylogger } from "../utils/winstonn.js";
+import { constants } from "crypto";
 
 export const getLoggenInUser = async (req, res, next) => {
   const { _id } = res.locals.loggedInUser;
@@ -36,8 +36,8 @@ export const getLoggenInUser = async (req, res, next) => {
 };
 
 export const register = async (req, res, next) => {
-  let { firstname, lastname, email, password, role } = req.body;
-  if (!firstname || !lastname || !password || !email || !role) {
+  let { username,type, email, password } = req.body;
+  if (!username || !type|| !password || !email ) {
     mylogger.error(
       `res.status = "400"  - INVALID_INFORMATION - ${req.originalUrl} - ${req.method} - ${req.ip}`
     );
@@ -47,8 +47,8 @@ export const register = async (req, res, next) => {
     });
   }
   try {
-    const user = await User.findOne({ email });
-    if (user) {
+    const _user = await User.findOne({ email });
+    if (_user) {
       mylogger.error(
         `res.status = "401"  - USER_EXISTS -${req.body.id} ${req.originalUrl} - ${req.method} - ${req.ip}`
       );
@@ -69,29 +69,33 @@ export const register = async (req, res, next) => {
         });
       }
 
-      const _user = new User({
+      const user = new User({
         _id: new mongoose.Types.ObjectId(),
-        firstname,
-        lastname,
+        username,
+        type,
         email,
-        role,
         password: hash,
       });
       const accessToken = jwt.sign(
-        { userId: _user._id },
+          JSON.stringify(user) ,
         process.env.JWT_SECRET,
-        {
-          expiresIn: "1d",
-        }
+        // { expiresIn: '18000000s' }
       );
-      _user.accessToken = accessToken;
-      await _user.save();
+      user.accessToken = accessToken;
+      const response = await user.save();
+
+       // kafka producer
+       run(response);
       return res.status(201).json({
+        
         message: req.t("SUCCESS.ADDED"),
         accessToken: accessToken,
         success: true,
       });
+    
+      
     });
+    
   } catch (error) {
     mylogger.error(
       `res.status = "500"  - ${error.message} - ${req.originalUrl} - ${req.method} - ${req.ip}`
@@ -103,10 +107,10 @@ export const register = async (req, res, next) => {
   }
 };
 
-export const login = async (req, res, next) => {
-  let { email, password } = req.body;
+export const login = async (req, res) => {
+  let { password } = req.body;
   try {
-    const user = await User.findOne({ email });
+    const user = await User.findOne({ email: req.params.email});
     if (!user) {
       mylogger.error(
         `res.status = "400"  - INVALID_CREDNTIALS - ${req.originalUrl} - ${req.method} - ${req.ip}`
@@ -127,19 +131,24 @@ export const login = async (req, res, next) => {
         success: false,
       });
     }
-    const accessToken = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
-      expiresIn: "1d",
-    });
+    const accessToken = jwt.sign( JSON.stringify(user), process.env.JWT_SECRET, 
+    // { expiresIn: '180000s',}
+    );
     await User.findByIdAndUpdate(user._id, { accessToken });
+    
+
     res.status(200).json({
       message: req.t("SUCCESS.LOGGED"),
       accessToken: accessToken,
       success: true,
     });
+    
   } catch (error) {
+    
     mylogger.error(
       `res.status = "500"  - ${error.message} - ${req.originalUrl} - ${req.method} - ${req.ip}`
     );
+    console.log(error.message);
     return res.status(500).json({
       message: error.message,
       error: error,
