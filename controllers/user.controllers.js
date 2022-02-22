@@ -3,14 +3,13 @@ import User from "../models/User.js";
 import { mylogger } from "../utils/winstonn.js";
 
 export const postUser = async (req, res) => {
-  console.log("wsoul$$$$$$$$$$$ ")
   try {
     const newUser = new User(req.body);
     
     if (
       !req.body.email ||
-      // !req.body.firstname ||
-      // !req.body.lastname ||
+      !req.body.firstname ||
+      !req.body.lastname ||
       !req.body.password
     ) {
     
@@ -23,7 +22,7 @@ export const postUser = async (req, res) => {
       res.status(400).send({ message: req.t("ERROR.AUTH.MISSING_FIELD") });
       return;
     }
-    console.log(newUser);
+   mylogger.info(newUser);
     const user = await User.findOne({ email: req.body.email });
 
     if (user) {

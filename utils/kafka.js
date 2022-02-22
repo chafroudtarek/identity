@@ -16,7 +16,7 @@ export const run = async (res) => {
     topic: "test",
     messages:[{ value: JSON.stringify(res)}] ,
   });
-  // console.log(`Logged    ${type}`);
+  // logger.info(`Logged    ${type}`);
   //[{ value: type +" "+ res.toString()}]
 };
 

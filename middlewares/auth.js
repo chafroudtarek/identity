@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 import dotenv from "dotenv";
-
+import {mylogger} from '../utils/winstonn.js'
 
 dotenv.config();
 
@@ -13,14 +13,14 @@ dotenv.config();
    
     return (req, res, next) => {
         try {
-            console.log("*** MIDDLEWARE verifyToken ***");
+            mylogger.info("*** MIDDLEWARE verifyToken ***");
             if (!req.headers.authorization) return res.sendStatus(401)
             const accessToken = req.headers.authorization.split(' ')[1];
             if (accessToken == null || !accessToken) return res.sendStatus(401)
             jwt.verify(accessToken, process.env.JWT_SECRET,  (err, user) => {
-                console.log(user);
+                mylogger.info(user);
                 if (err) return res.status(401).json(err);
-                console.log("permittedRoles : ", permittedRoles);
+                mylogger.info("permittedRoles : ", permittedRoles);
                
                 User
                     .findById(user._id).select('accessToken')
@@ -29,14 +29,14 @@ dotenv.config();
                             return res.status(401).json({ message: "Veuillez vous reconnecter." })
                         if (permittedRoles && permittedRoles.length) {
                             if (user && permittedRoles.includes(user.type)) {
-                                // console.log("user :", user);
+                                // mylogger.info("user :", user);
                                 req.user = user;
                                 next();
                             } else {
                                 res.status(403).json({ message: "Forbidden" }); // user is forbidden
                             }
                         } else {
-                            // console.log("user :", user);
+                            // mylogger.info("user :", user);
                             req.user = user;
                             next();
                         }

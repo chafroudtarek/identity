@@ -4,9 +4,7 @@ import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 import { run } from "../utils/kafka.js";
 
-
 import { mylogger } from "../utils/winstonn.js";
-import { constants } from "crypto";
 
 export const getLoggenInUser = async (req, res, next) => {
   const { _id } = res.locals.loggedInUser;
@@ -148,7 +146,7 @@ export const login = async (req, res) => {
     mylogger.error(
       `res.status = "500"  - ${error.message} - ${req.originalUrl} - ${req.method} - ${req.ip}`
     );
-    console.log(error.message);
+    mylogger.info(error.message);
     return res.status(500).json({
       message: error.message,
       error: error,

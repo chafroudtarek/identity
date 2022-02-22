@@ -7,25 +7,25 @@ const userSchema = new schema(
   {
     firstname: {
       type: String,
-      // require: true,
+      require: true,
     },
     lastname: {
       type: String,
-      // require: true,
+      require: true,
     },
     username: {
       type: String,
-      // require: true,
+      require: true,
     },
     
     email: {
       type: String,
-      // require: true,
+      require: true,
       unique: true,
     },
     password: {
       type: String,
-      // require: true,
+      require: true,
     },
 
     gender: {
@@ -44,7 +44,7 @@ const userSchema = new schema(
     type: {
       type: String,
       trim: true,
-      // required: "Specify Type of User",
+      required: "Specify Type of User",
     },
     studentOffreId: {
       type: mongoose.Types.ObjectId,
