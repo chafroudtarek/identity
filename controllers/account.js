@@ -84,6 +84,7 @@ export const register = async (req, res, next) => {
 
        // kafka producer
        run(response);
+      
       return res.status(201).json({
         
         message: req.t("SUCCESS.ADDED"),
