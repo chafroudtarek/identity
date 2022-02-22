@@ -18,8 +18,8 @@ app.use(express.json(), cors());
 app.use(middleware.handle(i18next));
 
 app.use(getUserLang);
-app.use("/api/v1/users", userRouter);
-app.use("/api/v1/auth", authRouter);
+app.use(`${process.env.API_PREFIX}/users`, userRouter);
+app.use(`${process.env.API_PREFIX}/${process.env.AUTH_ROUTER_PREFIX}`, authRouter);
 
 //Server
 connectDB();
