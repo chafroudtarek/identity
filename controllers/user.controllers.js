@@ -1,21 +1,28 @@
+import { run } from "../utils/kafka.js";
 import User from "../models/User.js";
 import { mylogger } from "../utils/winstonn.js";
 
 export const postUser = async (req, res) => {
   try {
     const newUser = new User(req.body);
+    
     if (
       !req.body.email ||
       !req.body.firstname ||
       !req.body.lastname ||
       !req.body.password
     ) {
+    
+
       mylogger.error(
         `res.status = "400"  - MISSING_FIELD - ${req.originalUrl} - ${req.method} - ${req.ip}`
       );
+
+
       res.status(400).send({ message: req.t("ERROR.AUTH.MISSING_FIELD") });
       return;
     }
+   mylogger.info(newUser);
     const user = await User.findOne({ email: req.body.email });
 
     if (user) {
@@ -28,7 +35,12 @@ export const postUser = async (req, res) => {
 
     const response = await newUser.save();
     res.send({ response: response, message: req.t("SUCCESS.SAVED") });
-    mylogger.error(
+
+   // kafka producer
+    run( response._id);
+
+
+    mylogger.info(
       `res.status = "200"  -SUCCESS.SAVED - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
     );
   } catch (error) {
@@ -62,7 +74,7 @@ export const getOneUser = async (req, res) => {
     if (req.user.role !== "ADMIN") {
       const result = await User.findOne({ _id: req.params.id }).select({
         firstname: 1,
-        lastname: 1,                                            
+        lastname: 1,
         email: 1,
       });
       res.send({
@@ -89,8 +101,12 @@ export const deleteOneUser = async (req, res) => {
   try {
     const user = await User.findOne({ _id: req.params.id });
     user.enabled = false;
-    await user.save();
+    const response = await user.save();
     res.send({ message: req.t("SUCCESS.DELETED") });
+    
+    // kafka producer
+    run( response);
+
     mylogger.error(
       `res.status = "200"  - SUCCESS.DELETED - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
     );
@@ -104,9 +120,9 @@ export const deleteOneUser = async (req, res) => {
 
 // update User
 export const updateUser = async (req, res) => {
-  if (req.user.role !== "ADMIN") {
+  if (req.user.type !== "EADMIN") {
     const { id } = res.locals.loggedInUser;
-    User.findOneAndUpdate(
+    const response = await User.findOneAndUpdate(
       id,
       {
         firstname: req.body.firstname,
@@ -117,12 +133,28 @@ export const updateUser = async (req, res) => {
       },
       { new: true }
     )
-      .then((user) => res.json(user))
-      .catch((err) => res.status(404).json(err));
+    if(response){
+      res.send({ message: req.t("SUCCESS.EDITED") });
+
+      // kafka producer
+      run(response);
+    }else{
+      res.send({message:req.t("ERROR.DEFAULT")})
+    }
+    
+      
   } else {
-    User.findByIdAndUpdate(req.params.id, req.body, { new: true })
-      .then((user) => res.json(user))
-      .catch((err) => res.status(404).json(err));
+    const response = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
+
+    if(response){
+      res.send({ message: req.t("SUCCESS.EDITED") });
+
+      // kafka producer
+      run(response);
+    }else{
+      res.send({message:req.t("ERROR.DEFAULT")})
+    }
+      
   }
 };
 

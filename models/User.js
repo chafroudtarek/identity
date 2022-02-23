@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { role, gender, language } from "../constants.js";
+import { gender, language } from "../constants.js";
 
 const schema = mongoose.Schema;
 
@@ -13,6 +13,11 @@ const userSchema = new schema(
       type: String,
       require: true,
     },
+    username: {
+      type: String,
+      require: true,
+    },
+    
     email: {
       type: String,
       require: true,
@@ -22,11 +27,7 @@ const userSchema = new schema(
       type: String,
       require: true,
     },
-    role: {
-      type: String,
-      enum: role,
-      default: "STUDENT",
-    },
+
     gender: {
       type: String,
       enum: gender,
@@ -40,6 +41,16 @@ const userSchema = new schema(
     region: {
       type: String,
     },
+    type: {
+      type: String,
+      trim: true,
+      required: "Specify Type of User",
+    },
+    studentOffreId: {
+      type: mongoose.Types.ObjectId,
+      ref: "Offre"
+    },
+    
     language: {
       type: String,
       enum: language,
@@ -57,12 +68,38 @@ const userSchema = new schema(
       type: Boolean,
       default: true,
     },
-    accessToken: String,
+    accessToken: {
+      type:String,
+      default:''
+    },
+    studentNiveauId: {
+      type: mongoose.Types.ObjectId,
+      
+    },
+    profile: {
+      type: {
+        fullName: { type: String, default: "", trim: true },
+        phone: { type: String, default: "", trim: true },
+        linkedIn: { type: String, default: "", trim: true },
+        facebook: { type: String, default: "", trim: true },
+      },
+      default: new Object()
+    },
+    permissions: {
+      type: {
+        chapitre: { type: Boolean, default: false },
+        media: { type: Boolean, default: false },
+        seance: { type: Boolean, default: false },
+        homework: { type: Boolean, default: false },
+      },
+      default: new Object()
+    },
 
     deletedAt: Date,
     facebookUrl: String,
     linkedInUrl: String,
-  },
+
+   },
   { timestamps: true }
 );
 

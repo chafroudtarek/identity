@@ -8,7 +8,7 @@ import i18next from "./utils/i18nn.js";
 import middleware from "i18next-http-middleware";
 import { mylogger } from "./utils/winstonn.js";
 import { getUserLang } from "./controllers/user.controllers.js";
-import auth from "./middlewares/auth.js";
+
 const app = express();
 dotenv.config();
 
@@ -16,10 +16,10 @@ dotenv.config();
 
 app.use(express.json(), cors());
 app.use(middleware.handle(i18next));
-app.use(auth);
+
 app.use(getUserLang);
-app.use("/api/users", userRouter);
-app.use("/api/auth", authRouter);
+app.use(`${process.env.API_PREFIX}/users`, userRouter);
+app.use(`${process.env.API_PREFIX}/${process.env.AUTH_ROUTER_PREFIX}`, authRouter);
 
 //Server
 connectDB();
@@ -32,3 +32,9 @@ app.listen(PORT, (err) =>
         `Server started and running on http://${process.env.HOST}:${PORT}`
       )
 );
+
+
+
+
+
+
