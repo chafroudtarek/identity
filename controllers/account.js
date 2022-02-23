@@ -74,10 +74,11 @@ export const register = async (req, res, next) => {
         email,
         password: hash,
       });
+      
       const accessToken = jwt.sign(
-          JSON.stringify(user) ,
+        {user} ,
         process.env.JWT_SECRET,
-        // { expiresIn: '18000000s' }
+        { expiresIn: process.env.expiresIn }
       );
       user.accessToken = accessToken;
       const response = await user.save();
@@ -130,8 +131,9 @@ export const login = async (req, res) => {
         success: false,
       });
     }
-    const accessToken = jwt.sign( JSON.stringify(user), process.env.JWT_SECRET, 
-    // { expiresIn: '180000s',}
+   
+    const accessToken = jwt.sign( {user}, process.env.JWT_SECRET, 
+     { expiresIn: process.env.expiresIn,}
     );
     await User.findByIdAndUpdate(user._id, { accessToken });
     
