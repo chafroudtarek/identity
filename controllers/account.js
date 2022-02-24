@@ -133,9 +133,9 @@ export const login = async (req, res) => {
     }
 
     const { accessToken, ...newUser } = user._doc;
-    
-    
-    const newaccessToken = jwt.sign({ newUser}, process.env.JWT_SECRET, 
+
+   
+    const newaccessToken = jwt.sign(newUser, process.env.JWT_SECRET, 
      { expiresIn: process.env.expiresIn,}
     );
    
