@@ -46,10 +46,7 @@ const userSchema = new schema(
       trim: true,
       required: "Specify Type of User",
     },
-    studentOffreId: {
-      type: mongoose.Types.ObjectId,
-      ref: "Offre"
-    },
+    
     
     language: {
       type: String,
@@ -59,9 +56,6 @@ const userSchema = new schema(
       type: String,
     },
     profession: {
-      type: String,
-    },
-    situation: {
       type: String,
     },
     enabled: {
@@ -76,24 +70,24 @@ const userSchema = new schema(
       type: mongoose.Types.ObjectId,
       
     },
-    profile: {
-      type: {
-        fullName: { type: String, default: "", trim: true },
-        phone: { type: String, default: "", trim: true },
-        linkedIn: { type: String, default: "", trim: true },
-        facebook: { type: String, default: "", trim: true },
-      },
-      default: new Object()
-    },
-    permissions: {
-      type: {
-        chapitre: { type: Boolean, default: false },
-        media: { type: Boolean, default: false },
-        seance: { type: Boolean, default: false },
-        homework: { type: Boolean, default: false },
-      },
-      default: new Object()
-    },
+    // profile: {
+    //   type: {
+    //     fullName: { type: String, default: "", trim: true },
+    //     phone: { type: String, default: "", trim: true },
+    //     linkedIn: { type: String, default: "", trim: true },
+    //     facebook: { type: String, default: "", trim: true },
+    //   },
+    //   default: new Object()
+    // },
+    // permissions: {
+    //   type: {
+    //     chapitre: { type: Boolean, default: false },
+    //     media: { type: Boolean, default: false },
+    //     seance: { type: Boolean, default: false },
+    //     homework: { type: Boolean, default: false },
+    //   },
+    //   default: new Object()
+    // },
 
     deletedAt: Date,
     facebookUrl: String,
