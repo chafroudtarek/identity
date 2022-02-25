@@ -74,10 +74,11 @@ export const register = async (req, res, next) => {
         email,
         password: hash,
       });
+      
       const accessToken = jwt.sign(
-          JSON.stringify(user) ,
+        {user} ,
         process.env.JWT_SECRET,
-        // { expiresIn: '18000000s' }
+        { expiresIn: process.env.expiresIn }
       );
       user.accessToken = accessToken;
       const response = await user.save();
@@ -130,15 +131,24 @@ export const login = async (req, res) => {
         success: false,
       });
     }
-    const accessToken = jwt.sign( JSON.stringify(user), process.env.JWT_SECRET, 
-    // { expiresIn: '180000s',}
+
+    const { accessToken, ...newUser } = user._doc;
+
+   
+    const newaccessToken = jwt.sign(newUser, process.env.JWT_SECRET, 
+     { expiresIn: process.env.expiresIn,}
     );
-    await User.findByIdAndUpdate(user._id, { accessToken });
-    
+   
+
+    user.accessToken = newaccessToken;
+    user.markModified("accessToken");
+    user.save();
+   
+   
 
     res.status(200).json({
       message: req.t("SUCCESS.LOGGED"),
-      accessToken: accessToken,
+      accessToken: newaccessToken,
       success: true,
     });
     
