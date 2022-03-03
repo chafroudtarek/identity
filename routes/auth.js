@@ -54,17 +54,17 @@ router.get("/", getLoggenInUser);
 router.post("/forgetpassword/", forgetpassword);
 
 //@POST method
-// @desc verfication du code
+//@desc verfication du code
 //@path : http://localhost::2022/api/auth/
 //Params body
 
-router.post("/forgetpass-verify/:id", forgetpasswordverify);
+router.post("/forgetpass-verify/:email", forgetpasswordverify);
 
 //@POST method
 // @desc reset password
 //@path : http://localhost::2022/api/auth/
 //Params body
-router.post("/resetpassword/:id", resetpasswordv1);
+router.post("/resetpassword/:email", resetpasswordv1);
 
 
 router.post('/logout',permit(role.STUDENT,role.INSTRUCTOR,role.ADMIN),logout);
