@@ -36,7 +36,7 @@ const userSchema = new schema(
       type: Date,
     },
     phone: {
-      type: Number,
+      type: String,
     },
     region: {
       type: String,
