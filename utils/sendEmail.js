@@ -5,10 +5,10 @@ export const sendEmail = async (email, text) => {
 
   const msg = {
     to: email,
-    from: "chafroudatarek6@example.com", // Use the email address or domain you verified above
+    from: "chafroudtarek9@gmail.com", // Use the email address or domain you verified above
     subject: "RESET PASSWORD",
     text: text,
-    html: "<strong> Hello sir! a request has been received to change the password for your SendGrid account.</strong>",
+    html: `<strong> Hello sir! a request has been received to change the password for your  account: code 👇 </strong> <br/><p>${text}</p> `,
   };
 
   (async () => {

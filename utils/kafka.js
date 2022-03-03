@@ -18,7 +18,7 @@ export const run = async (res) => {
   await producer.connect();
   await producer.sendBatch([ 
     {
-      topic: 'my-topic',
+      topic: 'test',
       messages:[{ value: JSON.stringify(res)}],
     },
     {
