@@ -32,9 +32,3 @@ app.listen(PORT, (err) =>
         `Server started and running on http://${process.env.HOST}:${PORT}`
       )
 );
-
-
-
-
-
-

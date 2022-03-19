@@ -1,13 +1,20 @@
 FROM node:14.18.0
- 
+MAINTAINER MOVE UP EDUCATION <tn.moveup@gmail.com>
 
+# Installing bash.
+# RUN apk add --no-cache bash bash-doc bash-completion
+
+# Create a directory (to house our source files) and navigate to it.
 WORKDIR /usr/src/app
+
+# Copy over the bash script to test and wait on the availability of a TCP host and port.
+COPY ./wait-for-it.sh /src/
+RUN chmod +x /src/wait-for-it.sh
  
-# Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
- 
+COPY package*.json ./ 
+  
+# Install app dependencies
 RUN npm install
 
 # Bundle app source
@@ -23,7 +30,8 @@ ENV EMAIL "chafroudtarek9@gmail.com"
 ENV AUTH_ROUTER_PREFIX "auth"
 ENV expiresIn "180000s"
 
-# EXPOSE ${PORT}
+# Expose the specified port back to the host machine.
+EXPOSE ${PORT}
 
 # Starting Script
 #CMD [ "npm", "run" ,"start" ]

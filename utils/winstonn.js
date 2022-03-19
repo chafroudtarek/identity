@@ -1,4 +1,3 @@
-import { createLogger } from 'winston';
 import winston from 'winston';
 
 
@@ -19,7 +18,7 @@ var options= {
     },
   };
 
- export const mylogger = createLogger({
+ export const mylogger = winston.createLogger({
     transports: [
       new winston.transports.File(options.file),
       new winston.transports.Console(options.console),
