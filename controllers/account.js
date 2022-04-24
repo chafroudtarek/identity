@@ -210,6 +210,41 @@ export const changepass = async (req, res) => {
   }
 };
 
+//Change user password by admin
+export const changepassbyadmin = async (req, res) => {
+  let {  newpassword } = req.body;
+  
+  try {
+    const user = await User.findOne({ email: req.params.email });
+    if (!user)
+      return res
+        .status(400)
+        .send({ message: req.t("ERROR.NOTFOUND_USERBYEMAIL") });
+
+    
+    bcryptjs.hash(newpassword, 10, async (hashError, hash) => {
+      if (hashError) {
+        mylogger.error(
+          `res.status = "500"  - ${hashError.message} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+        );
+        return res.status(500).json({
+          message: hashError.message,
+          error: hashError,
+        });
+      }
+
+      user.password = hash;
+      user.markModified("password");
+      user.save();
+      res.send({ message: req.t("SUCCESS.CHANGE_PASSWORD"), success: true });
+    });
+  } catch (error) {
+    res.send({ message: error });
+    mylogger.error(
+      `res.status = "400"  - ERROR RESET PASSWORD -${req.params.userId}- ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
 
 // recently added
 export const logout = async (req, res) => {
