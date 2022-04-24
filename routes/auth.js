@@ -4,7 +4,8 @@ import {
   login,
   register,
   changepass,
-  logout
+  logout,
+  changepassbyadmin
 } from "../controllers/account.js";
 
 import {
@@ -39,6 +40,14 @@ router.post("/register", register);
 //Params body
 
 router.post("/changepassword",  permit(role.ADMIN,role.INSTRUCTOR, role.STUDENT), changepass);
+
+
+//@POST method
+// @desc change password
+//@path : http://localhost::2022/api/auth/
+//Params body
+
+router.post("/changepassbyadmin/:email",  permit(role.ADMIN,role.INSTRUCTOR, role.STUDENT), changepassbyadmin);
 
 //@POST method
 // @desc post get loggen in user

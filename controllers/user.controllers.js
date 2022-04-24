@@ -10,10 +10,8 @@ export const postUser = async (req, res) => {
     
     if (
       !req.body.email ||
-      !req.body.firstname ||
-      !req.body.lastname ||
-      !req.body.password||
-      !req.body.username
+      !req.body.username 
+    
     ) {
     
 
@@ -38,39 +36,34 @@ export const postUser = async (req, res) => {
     
 
     
-    await newUser.save();
+    // await newUser.save();
 
-     //hash password
-     bcryptjs.hash(req.body.password, 10, async (hashError, hash) => {
-      if (hashError) {
-        mylogger.error(
-          `res.status = "500"  - ${hashError.message} - ${req.originalUrl} - ${req.method} - ${req.ip}`
-        );
-        return res.status(500).json({
-          message: hashError.message,
-          error: hashError,
-        });
-      }
+    //  //hash password
+    //  bcryptjs.hash(req.body.password, 10, async (hashError, hash) => {
+    //   if (hashError) {
+    //     mylogger.error(
+    //       `res.status = "500"  - ${hashError.message} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    //     );
+    //     return res.status(500).json({
+    //       message: hashError.message,
+    //       error: hashError,
+    //     });
+    //   }
 
-      newUser.password = hash;
-      newUser.markModified("password");
-      const response = newUser.save();
+    //   newUser.password = hash;
+    //   newUser.markModified("password");
+      const response = await newUser.save();
       res.send({ response: response, message: req.t("SUCCESS.SAVED") });
-    });
-    
+    // });
+
    
 
    // kafka producer
     //run( response._id);
 
 
-    mylogger.info(
-      `res.status = "200"  -SUCCESS.SAVED - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
-    );
   } catch (error) {
-    mylogger.error(
-      `res.status = "500"  - SAVED_FAILED - ${req.method} - ${req.ip}- ${req.originalUrl}`
-    );
+    console.log("** post user failed **", error)
     res.status(500).send({ message: /* req.t("ERROR.NOT_SAVED")*/error });
   }
 };
