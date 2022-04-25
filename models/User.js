@@ -7,25 +7,26 @@ const userSchema = new schema(
   {
     firstname: {
       type: String,
-      require: true,
     },
     lastname: {
       type: String,
-      require: true,
+     
     },
     username: {
       type: String,
-      require: true,
+      trim: true,
+      unique: "username already registered",
     },
     
     email: {
       type: String,
-      require: true,
-      unique: true,
+      trim: true,
+      required: "email is required",
+      unique: "email already registered",
+      match: [/.+\@.+\..+/, "Valid email required"],
     },
     password: {
       type: String,
-      require: false,
     },
 
     gender: {
@@ -44,7 +45,6 @@ const userSchema = new schema(
     type: {
       type: String,
       trim: true,
-      required: "Specify Type of User",
     },
     
     
