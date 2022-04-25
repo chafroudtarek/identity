@@ -25,7 +25,7 @@ const userSchema = new schema(
     },
     password: {
       type: String,
-      require: true,
+      require: false,
     },
 
     gender: {
@@ -70,6 +70,14 @@ const userSchema = new schema(
       type: mongoose.Types.ObjectId,
       
     },
+    company : {
+        type: mongoose.Types.ObjectId, ref : 'company'
+    },
+  //   firebase : [{
+  //         tokenNotification:{type:String},
+  //         niveau:{type:String}
+  // }],
+    
     // profile: {
     //   type: {
     //     fullName: { type: String, default: "", trim: true },
