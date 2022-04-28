@@ -16,4 +16,9 @@ export const addCompanyToDepartement = async(req,res)=>{
     
 }
 
+export const getByCompany = async(req,res)=>{
+    const {company}=req.params
+    Departement.find({company:company}).then((depsCompanyId)=>res.status(200).json({response:depsCompanyId})).catch((err) => res.status(400).json(err));
+}
+
 

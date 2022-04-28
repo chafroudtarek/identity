@@ -70,9 +70,21 @@ const userSchema = new schema(
       type: mongoose.Types.ObjectId,
       
     },
-    company : {
+    company : 
+      {
         type: mongoose.Types.ObjectId, ref : 'company'
     },
+    eooaccessrights : [
+      {
+        type: String
+    }
+    ],
+    
+    // company : [
+    //   {
+    //     type: mongoose.Types.ObjectId, ref : 'company'
+    // }
+    // ],
   //   firebase : [{
   //         tokenNotification:{type:String},
   //         niveau:{type:String}

@@ -10,6 +10,7 @@ router.post('/addDepartement',departementController.createDepartement);
 router.delete('/deleteDepartement/:id',departementController.deleteDepartement);
 router.put('/editDepartement/:id', departementController.updateDepartement);
 router.post('/addCompanyToDepartement/:dep/:company', departementController.addCompanyToDepartement);
+router.get('/depByCompanyid/:company', departementController.getByCompany);
 
 
 

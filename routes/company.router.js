@@ -9,6 +9,8 @@ router.post('/addCompany',companyController.createCompany);
 router.delete('/deleteCampany/:id',companyController.deleteCompany);
 router.put('/editCompany/:id', companyController.updateCompany);
 
+router.get('/companybyowner/:id', companyController.getByOwner);
+
 
 
 

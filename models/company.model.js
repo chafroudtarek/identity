@@ -17,6 +17,9 @@ const schemaCompany = new schema({
         imageUrl: { type: String, default: "" },
         employeesCount: { type: Number, default: 0 },
         enabled: { type: Boolean, default: false },
+        // owner : { type: mongoose.Types.ObjectId, ref : 'user' },
+
+ 
 
 })
 const company = mongoose.model("company", schemaCompany);
