@@ -34,8 +34,8 @@ export const getLoggenInUser = async (req, res, next) => {
 };
 
 export const register = async (req, res, next) => {
-  let { username,type, email, password } = req.body;
-  if (!username || !type|| !password || !email ) {
+  let { username,type, email, password, studentNiveauId} = req.body;
+  if (!username || !type|| !password || !email  ) {
     mylogger.error(
       `res.status = "400"  - INVALID_INFORMATION - ${req.originalUrl} - ${req.method} - ${req.ip}`
     );
@@ -72,6 +72,7 @@ export const register = async (req, res, next) => {
         username,
         type,
         email,
+        studentNiveauId,
         password: hash,
       });
       

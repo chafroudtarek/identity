@@ -5,7 +5,13 @@ import {
   deleteOneUser,
   getOneUser,
   getUser,
-  activateUser
+  activateUser,
+  getAllInstructor,
+  getAllHr,
+  getAllDisabledHr,
+  getAllDisabledInstructor,
+  restore,
+  getDisableStudent
 } from "../controllers/user.controllers.js";
 import {role}  from"../constants.js";
 import permit from "../middlewares/auth.js";
@@ -14,6 +20,53 @@ import permit from "../middlewares/auth.js";
 
 
 const router = Router();
+
+
+//get restore one  user
+router.get(
+  "/disablestudent",
+  
+  
+  getDisableStudent
+); 
+//get restore one  user
+router.put(
+  "/restore/:id",
+  
+  
+  restore
+); 
+
+//get all hr user
+router.get(
+  "/allhr",
+  
+  
+  getAllHr
+); 
+//get all Disabled hr user
+router.get(
+  "/alldisabledhr",
+  
+  
+  getAllDisabledHr
+); 
+
+// get all instructor user
+router.get(
+  "/allinstructor",
+  
+  
+getAllInstructor
+);
+// get all Disabled instructor user
+router.get(
+  "/alldisabledinstructor",
+  
+  
+getAllDisabledInstructor
+);
+
 
 //@POST method
 // @desc post a user
@@ -40,6 +93,9 @@ router.get(
   /*permit(role.ADMIN),*/
   getOneUser
 );
+
+
+
 
 //@Delete method
 // @desc delete one user by id
