@@ -71,7 +71,22 @@ export const postUser = async (req, res) => {
 //Get User
 export const getUser = async (req, res) => {
   try {
-    const result = await User.find();
+    const result = await User.find({type: "ESTUDENT",enabled : true});
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+    
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+export const getDisableStudent = async (req, res) => {
+  try {
+    const result = await User.find({type: "ESTUDENT",enabled : false});
     res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
     mylogger.error(
       `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
@@ -205,4 +220,80 @@ export const activateUser =async (req,res)=>{
       `res.status = "400"  - NOT_FOUND - ${req.originalUrl} - ${req.method} - ${req.ip}`
     );
   }
+}
+
+
+export const getAllHr = async (req, res) => {
+  try {
+    const result = await User.find({type:"EHR", enabled: true});
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+
+export const getAllDisabledHr = async (req, res) => {
+  try {
+    const result = await User.find({type:"EHR", enabled: false});
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+
+export const getAllInstructor = async (req, res) => {
+  try {
+    const result = await User.find({type:"EINSTRUCTOR", enabled: true});
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+
+export const getAllDisabledInstructor = async (req, res) => {
+  try {
+    const result = await User.find({type:"EINSTRUCTOR", enabled: false});
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+
+export const restore =  async (req, res) =>{
+  
+  try{
+    const object = await User.findOne({ _id: req.params.id });
+    object.enabled = true;
+    const response = await object.save();
+    res.send({ message: response});
+
+
+
+}catch(e){
+    res.send({ message: req.t("ERROR.NOT_FOUND") });
+}
 }

@@ -70,6 +70,26 @@ const userSchema = new schema(
       type: mongoose.Types.ObjectId,
       
     },
+    company : 
+      {
+        type: mongoose.Types.ObjectId, ref : 'company'
+    },
+    eooaccessrights : [
+      {
+        type: String
+    }
+    ],
+    
+    // company : [
+    //   {
+    //     type: mongoose.Types.ObjectId, ref : 'company'
+    // }
+    // ],
+  //   firebase : [{
+  //         tokenNotification:{type:String},
+  //         niveau:{type:String}
+  // }],
+    
     // profile: {
     //   type: {
     //     fullName: { type: String, default: "", trim: true },
