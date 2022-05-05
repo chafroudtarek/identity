@@ -10,14 +10,14 @@ const userSchema = new schema(
     },
     lastname: {
       type: String,
-     
+
     },
     username: {
       type: String,
       trim: true,
       unique: "username already registered",
     },
-    
+    // email
     email: {
       type: String,
       trim: true,
@@ -46,8 +46,8 @@ const userSchema = new schema(
       type: String,
       trim: true,
     },
-    
-    
+
+
     language: {
       type: String,
       enum: language,
@@ -63,33 +63,39 @@ const userSchema = new schema(
       default: true,
     },
     accessToken: {
-      type:String,
-      default:''
+      type: String,
+      default: ''
     },
     studentNiveauId: {
       type: mongoose.Types.ObjectId,
-      
+
     },
-    company : 
-      {
-        type: mongoose.Types.ObjectId, ref : 'company'
+    company:
+    {
+      type: mongoose.Types.ObjectId, ref: 'company'
     },
-    eooaccessrights : [
+    eooaccessrights: [
       {
         type: String
-    }
+      }
     ],
-    
+
     // company : [
     //   {
     //     type: mongoose.Types.ObjectId, ref : 'company'
     // }
     // ],
-  //   firebase : [{
-  //         tokenNotification:{type:String},
-  //         niveau:{type:String}
-  // }],
-    
+    //   firebase : [{
+    //         tokenNotification:{type:String},
+    //         niveau:{type:String}
+    // }],
+
+    description: {
+      type: String,
+    },
+    address: {
+      type: String,
+    },
     // profile: {
     //   type: {
     //     fullName: { type: String, default: "", trim: true },
@@ -113,7 +119,7 @@ const userSchema = new schema(
     facebookUrl: String,
     linkedInUrl: String,
 
-   },
+  },
   { timestamps: true }
 );
 

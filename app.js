@@ -35,6 +35,14 @@ app.listen(PORT, (err) =>
   err
     ? console.error(err)
     : mylogger.info(
-        `Server started and running on http://${process.env.HOST}:${PORT}`
-      )
+      `Server started and running on http://${process.env.HOST}:${PORT}`
+    )
 );
+
+
+import { run } from './utils/consumer.js'
+run().catch(console.error)
+
+
+
+
