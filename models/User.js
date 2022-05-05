@@ -17,7 +17,7 @@ const userSchema = new schema(
       trim: true,
       unique: "username already registered",
     },
-    
+    // email
     email: {
       type: String,
       trim: true,
@@ -69,6 +69,12 @@ const userSchema = new schema(
     studentNiveauId: {
       type: mongoose.Types.ObjectId,
       
+    },
+    description: {
+      type:String,
+    },
+    address: {
+      type:String,
     },
     // profile: {
     //   type: {

@@ -34,6 +34,8 @@ app.listen(PORT, (err) =>
 );
 
 
+import {run} from './utils/consumer.js'
+run().catch(console.error)
 
 
 

@@ -58,8 +58,8 @@ export const postUser = async (req, res) => {
 
    
 
-   // kafka producer
-    //run( response._id);
+  // kafka producer
+    run( response._id);
 
 
   } catch (error) {
