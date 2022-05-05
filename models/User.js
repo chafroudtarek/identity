@@ -35,6 +35,11 @@ const userSchema = new schema(
     },
     birthday: {
       type: Date,
+      // validate: function (input) {
+      //   let formatedInput = new Date(input)
+      //   return typeof Object.prototype.toString.call(formatedInput) === '[object Date]' && formatedInput < new Date('2017-01-01');
+      // },
+      //  message: input => `${input} must be greater than or equal to the current date!`
     },
     phone: {
       type: String,
