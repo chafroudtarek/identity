@@ -22,11 +22,12 @@ export const run = async (req ,res) => {
        
        console.log("*********** arrived*****************",)
         const obj = JSON.parse(message.value);
-        console.log(obj)
+        console.log("******id ",obj._id)
         
         try{
             
-            const response= await User.updateOne( {"_id": mongoose.Types.ObjectId(obj._id)}, {email:obj.email})
+            const response = await User.findByIdAndUpdate(mongoose.Types.ObjectId(obj.userId), { email: obj.profile.proEmail })
+            
             console.log("after updating", response)
             
             if(response){

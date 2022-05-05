@@ -59,7 +59,7 @@ export const postUser = async (req, res) => {
    
 
   // kafka producer
-    run( response._id);
+    run(response);
 
 
   } catch (error) {
@@ -135,6 +135,7 @@ export const deleteOneUser = async (req, res) => {
     const user = await User.findOne({ _id: req.params.id });
     user.enabled = false;
     const response = await user.save();
+    run(response);
     res.send({ message: req.t("SUCCESS.DELETED") });
     
     // kafka producer

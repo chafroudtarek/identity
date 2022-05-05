@@ -94,7 +94,7 @@ const userSchema = new schema(
     //   },
     //   default: new Object()
     // },
-
+    
     deletedAt: Date,
     facebookUrl: String,
     linkedInUrl: String,
