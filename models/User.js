@@ -10,7 +10,7 @@ const userSchema = new schema(
     },
     lastname: {
       type: String,
-     
+
     },
     username: {
       type: String,
@@ -35,6 +35,11 @@ const userSchema = new schema(
     },
     birthday: {
       type: Date,
+      // validate: function (input) {
+      //   let formatedInput = new Date(input)
+      //   return typeof Object.prototype.toString.call(formatedInput) === '[object Date]' && formatedInput < new Date('2017-01-01');
+      // },
+      //  message: input => `${input} must be greater than or equal to the current date!`
     },
     phone: {
       type: String,
@@ -46,8 +51,8 @@ const userSchema = new schema(
       type: String,
       trim: true,
     },
-    
-    
+
+
     language: {
       type: String,
       enum: language,
@@ -63,18 +68,38 @@ const userSchema = new schema(
       default: true,
     },
     accessToken: {
-      type:String,
-      default:''
+      type: String,
+      default: ''
     },
     studentNiveauId: {
       type: mongoose.Types.ObjectId,
-      
+
     },
+    company:
+    {
+      type: mongoose.Types.ObjectId, ref: 'company'
+    },
+    eooaccessrights: [
+      {
+        type: String
+      }
+    ],
+
+    // company : [
+    //   {
+    //     type: mongoose.Types.ObjectId, ref : 'company'
+    // }
+    // ],
+    //   firebase : [{
+    //         tokenNotification:{type:String},
+    //         niveau:{type:String}
+    // }],
+
     description: {
-      type:String,
+      type: String,
     },
     address: {
-      type:String,
+      type: String,
     },
     // profile: {
     //   type: {
@@ -99,7 +124,7 @@ const userSchema = new schema(
     facebookUrl: String,
     linkedInUrl: String,
 
-   },
+  },
   { timestamps: true }
 );
 

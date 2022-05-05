@@ -73,7 +73,7 @@ export const forgetpasswordverify = async (req, res) => {
     const forgetpassword = await Verification.findOne({
       email: req.params.email,
     });
-    console.log("***********", forgetpassword.verificationCode);
+   
     if (
       forgetpassword.used == false &&
       req.body.verificationCode == forgetpassword.verificationCode
@@ -91,7 +91,7 @@ export const forgetpasswordverify = async (req, res) => {
       res.send({ error: req.t("ERROR.USED"), succes: false });
     }
   } catch (e) {
-    console.log("$$$$$$$$$$$$$$$$$$$$", e);
+    
     res.send({ error: "CHECK YOUR CODE AGAIN", succes: false });
   }
 };
