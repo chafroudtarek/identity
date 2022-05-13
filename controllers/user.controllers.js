@@ -264,6 +264,23 @@ export const getAllHr = async (req, res) => {
   }
 };
 
+
+export const getAllDisabledHr = async (req, res) => {
+  try {
+    const result = await User.find({ type: "EHR", enabled: false });
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+
+
 /// gettign all user witg type : EEMPLOYEE
 
 export const getAllEmployees = async (req, res) => {
