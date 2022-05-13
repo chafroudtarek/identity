@@ -58,7 +58,7 @@ export const postUser = async (req, res) => {
 
 
 
-  // kafka producer
+    // kafka producer
     run(response);
 
 
@@ -264,9 +264,11 @@ export const getAllHr = async (req, res) => {
   }
 };
 
-export const getAllDisabledHr = async (req, res) => {
+/// gettign all user witg type : EEMPLOYEE
+
+export const getAllEmployees = async (req, res) => {
   try {
-    const result = await User.find({ type: "EHR", enabled: false });
+    const result = await User.find({ type: "EEMPLOYEE", enabled: true });
     res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
     mylogger.error(
       `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
