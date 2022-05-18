@@ -13,6 +13,7 @@ import {
   restore,
   getDisableStudent,
   getUsersExceptType,
+  getAllEmployees,
 
 } from "../controllers/user.controllers.js";
 import { role } from "../constants.js";
@@ -69,6 +70,12 @@ router.get(
   getAllDisabledInstructor
 );
 
+// get all Employees
+
+router.get(
+  "/allEmployees",
+  getAllEmployees
+)
 
 //@POST method
 // @desc post a user
