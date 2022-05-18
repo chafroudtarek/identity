@@ -5,15 +5,70 @@ import {
   deleteOneUser,
   getOneUser,
   getUser,
-  activateUser
+  activateUser,
+  getAllInstructor,
+  getAllHr,
+  getAllDisabledHr,
+  getAllDisabledInstructor,
+  restore,
+  getDisableStudent,
+  getUsersExceptType,
+
 } from "../controllers/user.controllers.js";
-import {role}  from"../constants.js";
+import { role } from "../constants.js";
 import permit from "../middlewares/auth.js";
 
 
 
 
 const router = Router();
+
+
+//get restore one  user
+router.get(
+  "/disablestudent",
+
+
+  getDisableStudent
+);
+//get restore one  user
+router.put(
+  "/restore/:id",
+
+
+  restore
+);
+
+//get all hr user
+router.get(
+  "/allhr",
+
+
+  getAllHr
+);
+//get all Disabled hr user
+router.get(
+  "/alldisabledhr",
+
+
+  getAllDisabledHr
+);
+
+// get all instructor user
+router.get(
+  "/allinstructor",
+
+
+  getAllInstructor
+);
+// get all Disabled instructor user
+router.get(
+  "/alldisabledinstructor",
+
+
+  getAllDisabledInstructor
+);
+
 
 //@POST method
 // @desc post a user
@@ -29,6 +84,7 @@ router.post("/",/*permit(role.ADMIN),*/ postUser);
 
 router.get("/",/* permit(role.ADMIN),*/getUser);
 
+router.get("/exceptType", getUsersExceptType)
 //@Get method
 // @desc Get one user
 //@path : http://localhost:2022/api/users:id
@@ -36,10 +92,13 @@ router.get("/",/* permit(role.ADMIN),*/getUser);
 
 router.get(
   "/:id",
-  
+
   /*permit(role.ADMIN),*/
   getOneUser
 );
+
+
+
 
 //@Delete method
 // @desc delete one user by id
@@ -54,8 +113,8 @@ router.delete("/:id", /*permit(role.ADMIN),*/ deleteOneUser);
 
 router.put(
   "/:id",
-  
- 
+
+
   /*permit(role.ADMIN,role.INSTRUCTOR, role.STUDENT),*/
   updateUser
 );
@@ -66,8 +125,8 @@ router.put(
 //Params id
 router.delete(
   "/activate/:id",
-  
- 
+
+
   /*permit(role.ADMIN,role.INSTRUCTOR, role.STUDENT),*/
   activateUser
 );

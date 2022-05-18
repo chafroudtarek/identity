@@ -7,25 +7,26 @@ const userSchema = new schema(
   {
     firstname: {
       type: String,
-      require: true,
     },
     lastname: {
       type: String,
-      require: true,
+
     },
     username: {
       type: String,
-      require: true,
+      trim: true,
+      unique: "username already registered",
     },
-    
+    // email
     email: {
       type: String,
-      require: true,
-      unique: true,
+      trim: true,
+      required: "email is required",
+      unique: "email already registered",
+      match: [/.+\@.+\..+/, "Valid email required"],
     },
     password: {
       type: String,
-      require: true,
     },
 
     gender: {
@@ -34,6 +35,11 @@ const userSchema = new schema(
     },
     birthday: {
       type: Date,
+      // validate: function (input) {
+      //   let formatedInput = new Date(input)
+      //   return typeof Object.prototype.toString.call(formatedInput) === '[object Date]' && formatedInput < new Date('2017-01-01');
+      // },
+      //  message: input => `${input} must be greater than or equal to the current date!`
     },
     phone: {
       type: String,
@@ -44,10 +50,9 @@ const userSchema = new schema(
     type: {
       type: String,
       trim: true,
-      required: "Specify Type of User",
     },
-    
-    
+
+
     language: {
       type: String,
       enum: language,
@@ -63,12 +68,38 @@ const userSchema = new schema(
       default: true,
     },
     accessToken: {
-      type:String,
-      default:''
+      type: String,
+      default: ''
     },
     studentNiveauId: {
       type: mongoose.Types.ObjectId,
-      
+
+    },
+    company:
+    {
+      type: mongoose.Types.ObjectId, ref: 'company'
+    },
+    eooaccessrights: [
+      {
+        type: String
+      }
+    ],
+
+    // company : [
+    //   {
+    //     type: mongoose.Types.ObjectId, ref : 'company'
+    // }
+    // ],
+    //   firebase : [{
+    //         tokenNotification:{type:String},
+    //         niveau:{type:String}
+    // }],
+
+    description: {
+      type: String,
+    },
+    address: {
+      type: String,
     },
     // profile: {
     //   type: {
@@ -88,12 +119,12 @@ const userSchema = new schema(
     //   },
     //   default: new Object()
     // },
-
+    
     deletedAt: Date,
     facebookUrl: String,
     linkedInUrl: String,
 
-   },
+  },
   { timestamps: true }
 );
 

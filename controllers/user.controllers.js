@@ -7,15 +7,13 @@ import { mylogger } from "../utils/winstonn.js";
 export const postUser = async (req, res) => {
   try {
     const newUser = new User(req.body);
-    
+
     if (
       !req.body.email ||
-      !req.body.firstname ||
-      !req.body.lastname ||
-      !req.body.password||
       !req.body.username
+
     ) {
-    
+
 
       mylogger.error(
         `res.status = "400"  - MISSING_FIELD - ${req.originalUrl} - ${req.method} - ${req.ip}`
@@ -25,7 +23,7 @@ export const postUser = async (req, res) => {
       res.status(400).send({ message: req.t("ERROR.AUTH.MISSING_FIELD") });
       return;
     }
-  //  mylogger.info(newUser);
+    //  mylogger.info(newUser);
     const user = await User.findOne({ email: req.body.email });
 
     if (user) {
@@ -35,42 +33,38 @@ export const postUser = async (req, res) => {
       );
       return;
     }
-    
-
-    
-    await newUser.save();
-
-     //hash password
-     bcryptjs.hash(req.body.password, 10, async (hashError, hash) => {
-      if (hashError) {
-        mylogger.error(
-          `res.status = "500"  - ${hashError.message} - ${req.originalUrl} - ${req.method} - ${req.ip}`
-        );
-        return res.status(500).json({
-          message: hashError.message,
-          error: hashError,
-        });
-      }
-
-      newUser.password = hash;
-      newUser.markModified("password");
-      const response = newUser.save();
-      res.send({ response: response, message: req.t("SUCCESS.SAVED") });
-    });
-    
-   
-
-   // kafka producer
-    //run( response._id);
 
 
-    mylogger.info(
-      `res.status = "200"  -SUCCESS.SAVED - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
-    );
+
+    // await newUser.save();
+
+    //  //hash password
+    //  bcryptjs.hash(req.body.password, 10, async (hashError, hash) => {
+    //   if (hashError) {
+    //     mylogger.error(
+    //       `res.status = "500"  - ${hashError.message} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    //     );
+    //     return res.status(500).json({
+    //       message: hashError.message,
+    //       error: hashError,
+    //     });
+    //   }
+
+    //   newUser.password = hash;
+    //   newUser.markModified("password");
+    const response = await newUser.save();
+    res.send({ response: response, message: req.t("SUCCESS.SAVED") });
+    // });
+
+
+
+  // kafka producer
+    run(response);
+
+
+
   } catch (error) {
-    mylogger.error(
-      `res.status = "500"  - SAVED_FAILED - ${req.method} - ${req.ip}- ${req.originalUrl}`
-    );
+    console.log("** post user failed **", error)
     res.status(500).send({ message: /* req.t("ERROR.NOT_SAVED")*/error });
   }
 };
@@ -78,7 +72,46 @@ export const postUser = async (req, res) => {
 //Get User
 export const getUser = async (req, res) => {
   try {
-    const result = await User.find();
+    const result = await User.find({ type: "ESTUDENT", enabled: true });
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+
+export const getUsersExceptType = async (req, res) => {
+
+  const { extract } = req.query;
+
+  let aggregation = [
+    {
+      '$match': {
+        type: { '$ne': extract },
+        enabled: true
+      }
+    }
+  ]
+  try {
+
+    const result = await User.aggregate(aggregation);
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+
+  } catch (error) {
+    console.log(error);
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+  }
+};
+
+export const getDisableStudent = async (req, res) => {
+  try {
+    const result = await User.find({ type: "ESTUDENT", enabled: false });
     res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
     mylogger.error(
       `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
@@ -105,14 +138,14 @@ export const getOneUser = async (req, res) => {
     //     response: result,
     //     message: req.t("SUCCESS.FOUND_USER"),
     //   });
-  /*  } else {*/
-      const result = await User.findOne({ _id: req.params.id });
-      res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
-      console.log(result)
-      mylogger.error(
-        `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
-      );
-   /* }*/
+    /*  } else {*/
+    const result = await User.findOne({ _id: req.params.id });
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    console.log(result)
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+    /* }*/
   } catch (error) {
     res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
     mylogger.error(
@@ -127,8 +160,9 @@ export const deleteOneUser = async (req, res) => {
     const user = await User.findOne({ _id: req.params.id });
     user.enabled = false;
     const response = await user.save();
+    run(response);
     res.send({ message: req.t("SUCCESS.DELETED") });
-    
+
     // kafka producer
     //run( response);
 
@@ -166,21 +200,21 @@ export const updateUser = async (req, res) => {
   //   }else{
   //     res.send({message:req.t("ERROR.DEFAULT")})
   //   }
-    
-      
+
+
   // } else {
-    const response = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
+  const response = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
 
-    if(response){
-      res.send({ message: req.t("SUCCESS.EDITED") });
+  if (response) {
+    res.send({ message: req.t("SUCCESS.EDITED") });
 
-      // kafka producer
-      run(response);
-    }else{
-      res.send({message:req.t("ERROR.DEFAULT")})
-    }
-      
- /* }*/
+    // kafka producer
+    run(response);
+  } else {
+    res.send({ message: req.t("ERROR.DEFAULT") })
+  }
+
+  /* }*/
 };
 
 // get user lang
@@ -190,7 +224,7 @@ export const getUserLang = (req, res, next) => {
   next();
 };
 
-export const activateUser =async (req,res)=>{
+export const activateUser = async (req, res) => {
 
   try {
     console.log(req.params.id)
@@ -199,7 +233,7 @@ export const activateUser =async (req,res)=>{
     user.enabled = true;
     await user.save();
     res.send({ message: req.t("SUCCESS.DELETED") });
-    
+
     // kafka producer
     //run( response);
 
@@ -211,5 +245,81 @@ export const activateUser =async (req,res)=>{
     mylogger.error(
       `res.status = "400"  - NOT_FOUND - ${req.originalUrl} - ${req.method} - ${req.ip}`
     );
+  }
+}
+
+
+export const getAllHr = async (req, res) => {
+  try {
+    const result = await User.find({ type: "EHR", enabled: true });
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+
+export const getAllDisabledHr = async (req, res) => {
+  try {
+    const result = await User.find({ type: "EHR", enabled: false });
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+
+export const getAllInstructor = async (req, res) => {
+  try {
+    const result = await User.find({ type: "EINSTRUCTOR", enabled: true });
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+
+export const getAllDisabledInstructor = async (req, res) => {
+  try {
+    const result = await User.find({ type: "EINSTRUCTOR", enabled: false });
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+
+export const restore = async (req, res) => {
+
+  try {
+    const object = await User.findOne({ _id: req.params.id });
+    object.enabled = true;
+    const response = await object.save();
+    res.send({ message: response });
+
+
+
+  } catch (e) {
+    res.send({ message: req.t("ERROR.NOT_FOUND") });
   }
 }

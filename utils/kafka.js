@@ -5,41 +5,30 @@ import { Kafka } from "kafkajs";
 
 const kafka = new Kafka({
   clientId: "my-app",
-  brokers: ["localhost:9092","localhost:9093"],
+  brokers: ["localhost:9092", "localhost:9093"],
 });
 
 const producer = kafka.producer();
 
 export const run = async (res) => {
 
-  
+
   // Producing
-  
-  await producer.connect();
-  await producer.sendBatch([ 
-    {
-      topic: 'test',
-      messages:[{ value: JSON.stringify(res)}],
-    },
-    {
-      topic: 'topic',
-      messages:[{ value: JSON.stringify(res)}],
-    }
-  ])
-  // await producer.send({
-  //   topic: 'my-topic',
-  //   messages:[{ value: JSON.stringify(res)}] ,
-  // });
-  // await producer.connect();
-  // await producer.send({
-  //   topic: 'test1',
-  //   messages:[{ value: JSON.stringify(res)}] ,
-  // });
-  console.log("sent")
-  // logger.info(`Logged    ${type}`);
-  //[{ value: type +" "+ res.toString()}]
+  for (let i = 1; i < 3; i++) {
+    await producer.connect();
+    await producer.send({
+      topic: `my-topic${i}`,
+      messages: [{ value: JSON.stringify(res) }],
+
+
+    });
+    console.log("sent", res)
+
+  }
+
+
 };
 
 
 
-//run().catch(console.error)
+
