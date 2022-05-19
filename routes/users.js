@@ -15,6 +15,7 @@ import {
   getAllAdmins,
   getAllDisabledAdmins,
   getUsersExceptType,
+  getAllEmployees,
 
 } from "../controllers/user.controllers.js";
 import { role } from "../constants.js";
@@ -73,6 +74,12 @@ router.get(
 router.get("/allAdmins",/* permit(role.ADMIN),*/getAllAdmins);
 router.get("/allDisabledAdmins",/* permit(role.ADMIN),*/getAllDisabledAdmins);
 
+// get all Employees
+
+router.get(
+  "/allEmployees",
+  getAllEmployees
+)
 
 //@POST method
 // @desc post a user

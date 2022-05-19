@@ -41,8 +41,11 @@ app.listen(PORT, (err) =>
 
 
 import { run } from './utils/consumer.js'
-run().catch(console.error)
+import { run as producer } from './utils/kafka.js'
 
+producer().catch(console.error)
+
+run().catch(console.error)
 
 
 
