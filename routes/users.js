@@ -12,6 +12,8 @@ import {
   getAllDisabledInstructor,
   restore,
   getDisableStudent,
+  getAllAdmins,
+  getAllDisabledAdmins,
   getUsersExceptType,
 
 } from "../controllers/user.controllers.js";
@@ -68,6 +70,8 @@ router.get(
 
   getAllDisabledInstructor
 );
+router.get("/allAdmins",/* permit(role.ADMIN),*/getAllAdmins);
+router.get("/allDisabledAdmins",/* permit(role.ADMIN),*/getAllDisabledAdmins);
 
 
 //@POST method

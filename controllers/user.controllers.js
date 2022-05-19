@@ -294,6 +294,34 @@ export const getAllInstructor = async (req, res) => {
   }
 };
 
+export const getAllAdmins = async (req, res) => {
+  try {
+    const result = await User.find({ type: "EADMIN", enabled: true });
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
+export const getAllDisabledAdmins = async (req, res) => {
+  try {
+    const result = await User.find({ type: "EADMIN", enabled: false });
+    res.send({ response: result, message: req.t("SUCCESS.FOUND_USER") });
+    mylogger.error(
+      `res.status = "200"  - SUCCESS.FOUND_USER - user id:${req.body.id} - ${req.method} - ${req.ip}- ${req.originalUrl}`
+    );
+  } catch (error) {
+    res.status(400).send({ message: req.t("ERROR.NOT_fOUND") });
+    mylogger.error(
+      `res.status = "400"  - NOT_FOUND - user id:${req.body.id} - ${req.originalUrl} - ${req.method} - ${req.ip}`
+    );
+  }
+};
 export const getAllDisabledInstructor = async (req, res) => {
   try {
     const result = await User.find({ type: "EINSTRUCTOR", enabled: false });
