@@ -39,7 +39,7 @@ router.post("/register", register);
 //@path : http://localhost::2022/api/auth/
 //Params body
 
-router.post("/changepassword",  permit(role.ADMIN,role.INSTRUCTOR, role.STUDENT), changepass);
+router.post("/changepassword",   changepass);
 
 
 //@POST method
@@ -47,7 +47,7 @@ router.post("/changepassword",  permit(role.ADMIN,role.INSTRUCTOR, role.STUDENT)
 //@path : http://localhost::2022/api/auth/
 //Params body
 
-router.post("/changepassbyadmin/:email",  permit(role.ADMIN,role.INSTRUCTOR, role.STUDENT), changepassbyadmin);
+router.post("/changepassbyadmin/:email",   changepassbyadmin);
 
 //@POST method
 // @desc post get loggen in user
@@ -76,6 +76,6 @@ router.post("/forgetpass-verify/:email", forgetpasswordverify);
 router.post("/resetpassword/:email", resetpasswordv1);
 
 
-router.post('/logout',permit(role.STUDENT,role.INSTRUCTOR,role.ADMIN),logout);
+router.post('/logout',logout);
 
 export default router;
